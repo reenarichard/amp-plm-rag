@@ -3,11 +3,10 @@
 If you use this repository in academic research, please cite:
 
 ```bibtex
-@mastersthesis{yourname2026,
-  author = {Your Name},
-  title = {Your Thesis Title},
-  school = {Your University},
+@mastersthesis{reenadgj2026,
+  author = {Reena Richard, Samyah Ahmadaldeen},
+  title = {Explainable Antimicrobial Peptide Identification using Retrieval-Augmented Generation},
+  school = {Stockholm University},
   year = {2026}
 }
-
-If it is a PhD thesis, replace `@mastersthesis` with `@phdthesis`.
+```
