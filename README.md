@@ -59,9 +59,9 @@ amp-plm-rag/
 ## Prerequisites
 
 - Python 3.9+
-- CUDA-capable GPU (or Google Colab with GPU runtime) — required for Phase 1 & 2
-- [Ollama](https://ollama.com) installed locally — required for Phase 3, 4, and Qwen-based evaluation
-- Anthropic API key — optional, for Claude Haiku evaluation judge in Phase 5
+- CUDA-capable GPU (or Google Colab with GPU runtime) - required for Phase 1 & 2
+- [Ollama](https://ollama.com) installed locally - required for Phase 3, 4, and Qwen-based evaluation
+- Anthropic API key - optional, for Claude Haiku evaluation judge in Phase 5
 
 ---
 
