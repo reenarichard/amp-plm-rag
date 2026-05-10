@@ -3,8 +3,6 @@ message: "If you use this software, please cite it as below."
 authors:
 - family-names: "Richard"
   given-names: "Reena"
-- family-names: "Ahmadaldeen"
-  given-names: "Samyah"
 title: "Explainable Antimicrobial Peptide Identification using Retrieval-Augmented Generation"
 version: 1.0.0
 date-released: 2026-05-10
