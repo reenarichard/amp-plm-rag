@@ -4,6 +4,8 @@ message: "Explainable Antimicrobial Peptide Identification using Retrieval-Augme
 authors:
   - family-names: "Richard"
     given-names: "Reena"
+  - family-names: "Ahmadaldeen"
+    given-names: "Samyah"
 version: 1.0.0
 date-released: 2026-05-10
 license: MIT
