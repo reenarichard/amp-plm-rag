@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "Antimicrobial Peptide Identification"
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Richard"
+    given-names: "Reena"
+version: 1.0.0
+date-released: 2026-05-10
+license: MIT
