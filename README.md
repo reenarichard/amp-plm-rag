@@ -2,7 +2,7 @@
 
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue) ![License: MIT](https://img.shields.io/badge/license-MIT-green)
 
-A Master's thesis project (Stockholm University, 2026) that fine-tunes **ProtBERT-BFD** on the Veltri dataset to classify antimicrobial peptides (AMPs), then applies a **Retrieval-Augmented Generation** pipeline with **BioMistral-7B** to produce interpretable biological explanations for each prediction. Explanation quality is evaluated using an **LLM-as-Judge** approach (Claude Haiku / Qwen2.5).
+A Master's thesis project (Stockholm University, 2026) that fine-tunes **ProtBERT-BFD** on the Veltri dataset to classify antimicrobial peptides (AMPs), then applies a **Retrieval-Augmented Generation** pipeline with **Mistral-7B** to produce interpretable biological explanations for each prediction. Explanation quality is evaluated using an **LLM-as-Judge** approach (Claude Haiku / Qwen2.5).
 
 **Author:** Reena Richard
 
@@ -77,7 +77,7 @@ Pull the LLM models for the RAG and evaluation phases:
 
 ```bash
 ollama serve                    # start local LLM server (keep running)
-ollama pull biomistral:7b       # ~4 GB — used in Phases 3 & 4
+ollama pull mistral:7b          # ~4 GB — used in Phases 3 & 4
 ollama pull qwen2.5:7b          # ~4 GB — optional, for Qwen evaluation judge
 ```
 
@@ -104,11 +104,11 @@ Open `Predict_V4.ipynb`. Run all cells.
 
 ### Phase 3 - RAG explanations for predicted AMPs
 
-Open `amp_explanation.ipynb`. Ensure `ollama serve` is running with `biomistral:7b` available. Run all cells.
+Open `amp_explanation.ipynb`. Ensure `ollama serve` is running with `mistral:7b` available. Run all cells.
 
 - Builds a cosine-similarity vector store from `StarPep_APD_only.csv` using ProtBERT-BFD embeddings (cached after first run)
 - For each AMP prediction, retrieves the top-3 most similar known AMPs
-- Generates a 6-part biological explanation via BioMistral-7B (temperature=0, deterministic)
+- Generates a 6-part biological explanation via Mistral-7B (temperature=0, deterministic)
 - Outputs `Results/amp_rag_results.csv`
 
 ### Phase 4 - RAG explanations for predicted non-AMPs
@@ -139,7 +139,7 @@ Run all cells to produce per-statement LLM-as-Judge scores. Results saved to `Re
 | Training data | Veltri dataset | `Data/all_veltri.csv` |
 | AMP vector store | StarPep APD | `Data/StarPep_APD_only.csv` |
 | Non-AMP vector store | UniProt Swiss-Prot | `Data/uniprot_cytoplasmic_metadata.pkl` |
-| RAG LLM | BioMistral-7B | `ollama pull biomistral:7b` |
+| RAG LLM | Mistral-7B | `ollama pull mistral:7b` |
 | Evaluation judge | Claude Haiku 4.5 | Anthropic API |
 | Evaluation judge (alt) | Qwen2.5-7B | `ollama pull qwen2.5:7b` |
 
