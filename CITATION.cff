@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-title: "Antimicrobial Peptide Identification"
-message: "Explainable Antimicrobial Peptide Identification using Retrieval-Augmented Generation"
+title: "Explainable Antimicrobial Peptide Identification using Retrieval-Augmented Generation"
+message: "If you use this software, please cite the associated thesis."
 authors:
   - family-names: "Richard"
     given-names: "Reena"
