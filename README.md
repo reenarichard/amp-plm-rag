@@ -4,7 +4,7 @@
 
 A Master's thesis project (Stockholm University, 2026) that fine-tunes **ProtBERT-BFD** on the Veltri dataset to classify antimicrobial peptides (AMPs), then applies a **Retrieval-Augmented Generation** pipeline with **BioMistral-7B** to produce interpretable biological explanations for each prediction. Explanation quality is evaluated using an **LLM-as-Judge** approach (Claude Haiku / Qwen2.5).
 
-**Authors:** Reena Richard, Samyah Ahmadaldeen
+**Author:** Reena Richard
 
 ---
 
