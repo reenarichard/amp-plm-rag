@@ -32,15 +32,15 @@ A Master's thesis project (Stockholm University, 2026) that fine-tunes **ProtBER
 
 ```
 amp-plm-rag/
-├── Model_V4.ipynb                        # Phase 1 — ProtBERT-BFD training
-├── Predict_V4.ipynb                      # Phase 2 — Test set inference
-├── amp_explanation.ipynb                 # Phase 3 — RAG + explanation (AMPs)
-├── non_amp_explanation.ipynb             # Phase 4 — RAG + explanation (non-AMPs)
-├── explanation_evaluation.ipynb          # Phase 5 — LLM-as-Judge evaluation
+├── Model_V4.ipynb                                # Phase 1 — ProtBERT-BFD training
+├── Predict_V4.ipynb                              # Phase 2 — Test set inference
+├── amp_explanation.ipynb                         # Phase 3 — RAG + explanation (AMPs)
+├── non_amp_explanation.ipynb                     # Phase 4 — RAG + explanation (non-AMPs)
+├── explanation_evaluation.ipynb                  # Phase 5 — LLM-as-Judge evaluation
 ├── Data/
-│   ├── all_veltri.csv                    # Training/evaluation dataset (3,556 seqs)
-│   ├── StarPep_APD_only.csv              # AMP vector store source
-│   └── uniprot_cytoplasmic_metadata.pkl  # Non-AMP retrieval metadata
+│   ├── all_veltri.csv                            # Training/evaluation dataset (3,556 seqs)
+│   ├── StarPep_APD_only.csv                      # AMP vector store source
+│   └── uniprot_swissprot_cytoplasmic_nonamp.csv  # Non-AMP retrieval metadata
 ├── Results/
 │   ├── test_predictions.csv
 │   ├── amp_rag_results.csv
